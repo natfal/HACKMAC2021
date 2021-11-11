@@ -134,7 +134,7 @@ Your Vehicle Identification Number (VIN) is your vehicle’s unique 17 character
 
 I looked at all the pictures I found (including another side-on picture I found of the car that showed the driver's side more clearly), and I could not figure out for the life of me how I was supposed to zoom in enough to find the VIN, and put it down to being a forensics challenge that required advanced photo skills I did not have.
 
-In hindsight, it appears the solution was to find one of randal's friends in the comments, who had anothr white car picture on his twitter page:
+In hindsight, it appears the solution was to find one of randal's friends in the comments, who had another white car picture on his twitter page:
 
 ![9](OSINT/9.jpeg)
 
