@@ -160,7 +160,15 @@ challenge: SecretClub1
 Attached files: SecretClub1.java
 ```
 
-Since the `checkPassword()` function checks that the bytes in the given password 
+Since the `checkPassword()` function checks that the bytes in the given password are **3 more** than the expected bytes:
+
+```Java
+if (passBytes[i]+3 != myBytes[i]) {
+    return false;
+}
+```
+
+Wrote a script that **subtracts 3** from each byte:
 
 ```Java
 byte[] myBytes = {
