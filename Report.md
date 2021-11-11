@@ -108,8 +108,8 @@ This article from the same day shows the licence plate is DCL 86X: https://www.s
 
 Here are a couple more shots:
 
-![7](OSINT/6.jpeg)
-![8](OSINT/6.jpeg)
+![7](OSINT/7.jpeg)
+![8](OSINT/8.jpeg)
 
 At this point I was sure I had the right number plate, and I tried searching the VIN on Service NSW, since it mentioned the incident was in NSW: https://my.service.nsw.gov.au/MyServiceNSW/index#/rms/freeRegoCheck/details
 
