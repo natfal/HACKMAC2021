@@ -86,6 +86,64 @@ allocations[owner] = msg.value;
 
 # OSINT
 
+**UNSOLVED, but tried hard**
+
+```
+challenge: Stolen Vehicle
+"Randal Rozza is a suspected criminal of stealing a motor vehicle. A team of contracted investigators have been deployed to find any suspicious activity from his online presence. The suspect has been wanted by the police for some time now. The police have suspicion on how he has this much money. The suspect and his acquaintances are known to be very active on twitter and flaunting his wealth. You have been asked to join as an online team of detectives to locate incriminating evidence.
+https://twitter.com/randalrozza
+Objective: Using all intel/resources you have been allocated, locate the stolen vehicle's VIN number.
+The flag will be in the format with NO SPACES and ALL CAPS HACKMAC{vehicleidentificationnumber}"
+```
+
+Now this challenge was a real doozy. Upon going to the twitter page, I found this picture:
+
+![6](OSINT/6.jpeg)
+
+My immediate thought was that this looked like a legitimate picture, likely that a Stringer took for a news page. So I reverse searched the image on Google and found it appeared on the daily telegraph (although I can't find the link to be working anymore).
+
+However, another aerial shot of the car can be found here: https://twitter.com/7newssydney/status/857461858223104000?lang=ar
+
+This article from the same day shows the licence plate is DCL 86X: https://www.smh.com.au/national/nsw/police-chase-audi-sports-car-through-sydney-after-it-was-stolen-at-gunpoint-20170427-gvta27.html
+
+Here are a couple more shots:
+
+![7](OSINT/6.jpeg)
+![8](OSINT/6.jpeg)
+
+At this point I was sure I had the right number plate, and I tried searching the VIN on Service NSW, since it mentioned the incident was in NSW: https://my.service.nsw.gov.au/MyServiceNSW/index#/rms/freeRegoCheck/details
+
+![10](OSINT/10.png)
+
+I had no idea what this meant so I tried another site: https://www.checkmyrego.com.au/vin-check/
+
+...and about 5 more that asked for credit card details. I tried every state, including most states in America and there was no result.
+
+At this point I realised this car was probably not registered anymore, possibly impounded or something along those lines. Maybe I had to check the pictures and zoom in to find the VIN?
+
+This website: https://www.aami.com.au/faq/how-do-i-find-my-vin.html provided some instructions:
+
+```
+Your Vehicle Identification Number (VIN) is your vehicle’s unique 17 character code. It can be used when tracking recalls, registrations, warranties, claims and theft. Your VIN can be located in a few places inside and outside your vehicle:
+- Where the corner of the dashboard meets the windshield on the driver’s side.
+- The door post (where the door latches when it’s closed) on the driver’s side.
+- At the front of the engine block (under your bonnet).
+- At the front end of the frame behind the driver’s side tyre.
+- Inside of the driver’s side door jamb (where the door connects to the body of the car).
+```
+
+I looked at all the pictures I found (including another side-on picture I found of the car that showed the driver's side more clearly), and I could not figure out for the life of me how I was supposed to zoom in enough to find the VIN, and put it down to being a forensics challenge that required advanced photo skills I did not have.
+
+In hindsight, it appears the solution was to find one of randal's friends in the comments, who had anothr white car picture on his twitter page:
+
+![9](OSINT/9.jpeg)
+
+Notice that it is a QLD plate, and look up `JD11` on this page: https://www.service.transport.qld.gov.au/checkrego/public/Welcome.xhtml?dswid=-5644
+
+`:)`
+
+**flag:** `HACKMAC{WUAZZZ421DN000811}`
+
 ```
 challenge: In depth
 connection_info: https://www.facebook.com/people/Vekin-Huc/100073429656689/
@@ -116,18 +174,6 @@ challenge: SocialMediaInspection
 ```
 
 **flag:** `HACKMAC{JonaThanisSOcool}`
-
-**UNSOLVED, but tried hard**
-
-```
-challenge: Stolen Vehicle
-"Randal Rozza is a suspected criminal of stealing a motor vehicle. A team of contracted investigators have been deployed to find any suspicious activity from his online presence. The suspect has been wanted by the police for some time now. The police have suspicion on how he has this much money. The suspect and his acquaintances are known to be very active on twitter and flaunting his wealth. You have been asked to join as an online team of detectives to locate incriminating evidence.
-https://twitter.com/randalrozza
-Objective: Using all intel/resources you have been allocated, locate the stolen vehicle's VIN number.
-The flag will be in the format with NO SPACES and ALL CAPS HACKMAC{vehicleidentificationnumber}"
-```
-
-**flag:** `HACKMAC{WUAZZZ421DN000811}`
 
 # Web
 
