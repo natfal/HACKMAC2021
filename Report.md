@@ -184,6 +184,16 @@ challenge: SecretClub2
 Attached files: SecretClub2.java
 ```
 
+This requires a length of 32 (32 bytes), and each group of 4 bytes is manipulated so that one after the other, they combine to generate the numbers:
+
+```Java
+return x[0] == 1650029619 && x[1] == 2053059694 && x[2] == 1147093553 && x[3] == 1312060025 && x[4] == 1599091811&& x[5] == 1261530681 && x[6] == 1600730463 && x[7] == 1664118604;
+```
+
+Additionally, the shift of 24, 16, 8, and 0, signified that the input bytes would be found by just segmenting each number into 4 bytes, one for each letter.
+
+(I lost the script that reverses this, but the concepts from above applied in reversing the bytes)
+
 **flag:** `HACKMAC{bYt3z_4nD_B1N4ry_P4cK1n9_i5_c0oL}`
 
 # Crypto
