@@ -92,6 +92,14 @@ connection_info: https://www.facebook.com/people/Vekin-Huc/100073429656689/
 "Sigh, I accidentally leaked the flag image for a challenge to my friend. Can you find where he leaked it for me?"
 ```
 
+Rabbit trail of social medias:
+
+![1](OSINT/1.png)
+![2](OSINT/2.png)
+![3](OSINT/3.png)
+![4](OSINT/4.png)
+![5](OSINT/5.png)
+
 **flag:** `HACKMAC{L3Aky_pEoPLe_Ar3_tH3_WoRST}`
 
 ```
